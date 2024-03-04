@@ -19,13 +19,18 @@
 Using bulleted lists, describe the balanced accuracy scores and the precision and recall scores of all machine learning models.
 
 * Machine Learning Model 1:
-  * Description of Model 1 Accuracy, Precision, and Recall scores.
+  * Classification Report:
+                            precision    recall  f1-score   support
+            
+                       0       1.00      1.00      1.00     56271
+                       1       0.86      0.90      0.88      1881
+            
+                accuracy                           0.99     58152
+               macro avg       0.93      0.95      0.94     58152
+            weighted avg       0.99      0.99      0.99     58152
 
-
+       
+     * The recall for healthy loans is high. The recall for loans at risk is lower, which indicates a lower false negative rate. The accuracy appears to be very high, but there could be an imbalance since the number of healthy loans represents 96.6% of the model.
 ## Summary:
 
-Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
-* Which one seems to perform best? How do you know it performs best?
-* Does performance depend on the problem we are trying to solve? (For example, is it more important to predict the `1`'s, or predict the `0`'s? )
-
-If you do not recommend any of the models, please justify your reasoning.
+Since there are many variables that can lead to loan defaults, I would suggest another round of machine learning is completed - SVM, to ensure the data isn't imbalanced.
