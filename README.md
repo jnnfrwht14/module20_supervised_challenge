@@ -1,10 +1,18 @@
 # module20_supervised_creditrisk
 
 ## Purpose of the analysis: 
-* Explain what financial information the data was on, and what you needed to predict.
-* Provide basic information about the variables you were trying to predict (e.g., `value_counts`).
-* Describe the stages of the machine learning process you went through as part of this analysis.
-* Briefly touch on any methods you used (e.g., `LogisticRegression`, or any resampling method).
+* The financial information provided was a dataset of historical lending activity from a peer-to-peer lending services company to build a model that can identify the creditworthiness of borrowers.
+* The goal was to predict loans with a high risk of defaulting.
+
+  ### Machine learning was used:
+* Fit a logistic regression model by using the training data (X_train and y_train).
+
+* Save the predictions for the testing data labels by using the testing feature data (X_test) and the fitted model.
+
+* Evaluate the model’s performance by doing the following:
+  * Generate a confusion matrix.
+  * Print the classification report.
+* I used LogisticRegression to predict defaulting the loans, using train_test_split.
 
 ## Results:
 
@@ -14,11 +22,7 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
   * Description of Model 1 Accuracy, Precision, and Recall scores.
 
 
-
-* Machine Learning Model 2:
-  * Description of Model 2 Accuracy, Precision, and Recall scores.
-
-## Summary
+## Summary:
 
 Summarize the results of the machine learning models, and include a recommendation on the model to use, if any. For example:
 * Which one seems to perform best? How do you know it performs best?
