@@ -33,4 +33,4 @@ Using bulleted lists, describe the balanced accuracy scores and the precision an
      * The recall for healthy loans is high. The recall for loans at risk is lower, which indicates a lower false negative rate. The accuracy appears to be very high, but there could be an imbalance since the number of healthy loans represents 96.6% of the model.
 ## Summary:
 
-Since there are many variables that can lead to loan defaults, I would suggest another round of machine learning is completed - SVM, to ensure the data isn't imbalanced.
+Since there are many variables that can lead to loan defaults, I would suggest another round of machine learning is completed - SVM.
